@@ -1,0 +1,545 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	background: #f8f8f8;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	color: rgba(0,0,0,.87);
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.brand {
+	font-size: 1.25em;
+	border-bottom: 1px solid #607d8b;
+	margin: 0; /* removes h1 margin collapsing */
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.brand a,
+.main-nav a {
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	background-color: #78909c;
+	transition: background-color .5s ease-in;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer,
+.main-nav a:hover,
+.msg-headline,
+.parallax i,
+.parallax a,
+.contact-cta i,
+.contact-cta h2,
+.contact-cta a,
+.box p {
+	color: #fff;
+}
+
+.banner,
+.main-footer,
+.contact-cta,
+.brand a,
+.main-nav a,
+.card-msg,
+.card {
+	text-align: center;
+}
+
+.banner {
+	background-color: #607d8b;
+	min-height: 300px;
+	padding: 3.2em 0em;
+	margin-bottom: 60px;
+}
+
+.parallax {
+	height: 400px;
+	margin-bottom: 60px;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+}
+
+.parallax a {
+	border-radius: 3px;
+	font-weight: 400;
+	padding: 10px 15px;
+	border: 2px solid #fff;
+}
+
+.parallax a:hover {
+	background-color: #fff;
+	color: rgba(0,0,0,.54);
+	transition: background-color .5s ease-in;
+
+}
+
+.review-headline {
+	font-size: 1.3em;
+	font-weight: 300;
+	margin: 0;
+}
+
+.loud {
+	font-weight: 500;
+	color: #ffca44;
+	font-size: 1.8rem;
+	font-style: italic;
+	margin-left: 25px;
+}
+
+.contact-cta {
+	margin-top: 40px;
+	background: #3acec2;
+	width: 100%;
+}
+
+.contact-cta .grid-12 {
+	padding-top: 1.5em;
+	padding-bottom: 2.5em;
+}
+
+.contact-cta i {
+	font-size: 3em;
+}
+
+.contact-cta .btn {
+	border-radius: 3px;
+	display: inline-block;
+	border: 2px solid #fff;
+}
+
+.contact-cta .btn:hover {
+	background-color: #607d8b;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	border-color: #607d8b;
+	transition: background-color .5s ease-in;
+}
+
+.main-footer {
+	background: #607d8b;
+}
+
+.main-footer .container {
+	padding: 2em;
+}
+
+.main-footer span {
+	float:left;
+}
+
+.main-footer i {
+	float: right;
+	margin: 0 .5em;
+	font-size: 1.3em;
+}
+
+.main-footer a {
+    color: #fff;
+}
+
+.main-footer i:hover,
+.main-footer a:hover {
+	cursor: pointer;
+	opacity: .6;
+}
+
+/* ---- Page Elements ---- */
+
+.fa-scissors {
+	font-size: 4.5em;
+}
+
+.headline {
+	margin-top: .5em;
+	margin-bottom: 0;
+    font-family: 'Playball', cursive;
+}
+
+
+/* ---- Material Cards ---- */
+
+.grid-4 {
+	margin-bottom: 30px;
+}
+
+.card-msg,
+.card {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	border-radius: 3px;
+	background: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card-img img,
+.msg-heading {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.msg-heading {
+	background: #607d8b;
+	padding: 1em 0;
+}
+
+.card-headline,
+.msg-headline {
+	font-size 2em;
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.card-body {
+	padding: 0 1em;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.card-link {
+	padding: 0;
+	font-size: .85em;
+	margin: 0;
+}
+
+.btn {
+	display: block;
+	font-weight: 500;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	color: #093a58;
+}
+
+.card .btn:hover {
+	opacity: .54;
+	background: #eee;
+}
+
+/* ---- Salon Column grid 5 ---- */
+
+.gallery {
+	padding: 2em 0;
+	/*overflow: hidden;*/
+}
+
+
+.gallery-img {
+	max-width: 125px;
+	height: 125px;
+	margin-right: 3px;
+	border-radius: 3px;
+}
+
+.box {
+	/*background: rgba(0,0,0,.4);*/
+	border-radius: 5px;
+	width: 90%;
+	text-align: left;
+	margin: 1em auto;
+	padding: 1em 1em 1em 1.6em;
+}
+
+.box .left {
+	margin-left: 40%;
+	font-weight: 500;
+}
+
+.push-bot {
+	margin-bottom: 20px;
+}
+
+.left {
+	text-align: left;
+	padding-left: 22%;
+}
+
+.left i {
+	margin: 1em .5em 1em 0;
+}
+
+.small-p p {
+	margin: 10px 0;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* ---- Adjust image gallery on small screens ---- */
+
+@media (min-width: 1px) and (max-width: 374px) {
+	.gallery-img {
+		max-width: 96px;
+		height: 96px;
+		margin-left: .5em;
+		margin-bottom: 0;
+	}
+}
+
+/* ---- Adjust reviews font on small screens ---- */
+
+@media (min-width: 1px) and (max-width: 414px) {
+	.review-headline {
+		font-size: 1em;
+	}
+	.loud {
+		font-size: 1.4rem;
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 460px) {
+	.main-footer span {
+		font-size: .8em;
+	}
+	.main-footer i {
+		margin: 0 .3em;
+		font-size: 14px;
+	}
+}
+
+/* ---- Main styles for medium screens ---- */
+
+@media (min-width: 768px) {
+
+	body {
+		padding-top: 66px;
+	}
+
+	.main-header {
+		padding-top: .5em;
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.banner {
+		background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://c1.staticflickr.com/9/8716/16292012333_8f2494a241_o.jpg') center no-repeat;
+		background-size: cover;
+		height: 70vh;
+		padding-top: 130px;
+	}
+    
+    .headline {
+        margin-top: 0;
+        font-size: 2.8em;
+    }
+    
+    .tagline {
+        font-size: 1.2em;
+    }
+
+	.card {
+		width: 100%;
+	}
+
+	.gallery {
+		width: 95%;
+		border-bottom: none;
+		margin: 0 auto;
+	}
+
+	.grid-7 .card-link {
+		border-top: 1px solid #ddd;
+	}
+
+	.gallery-img {
+		margin: 10px;
+		max-width: 150px;
+		height: 140px;
+	}
+
+	.card-img img {
+		height: 230px;
+	}	
+
+	.card-link {
+		text-align: left;
+	}
+
+	.msg-body {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+
+	.card-link {
+		padding: .5em;
+	}
+
+	.card .btn {
+		display: inline-block;
+		padding: 5px 10px;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.brand {
+		border: none;
+	}
+
+	.brand,
+	.main-nav li {
+		background: none;
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		margin-left: 15px;
+	}
+
+	.push-bot {
+		margin-bottom: 45px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1069px) {
+	.review-headline {
+		font-size: 1em;
+	}
+
+	.loud {
+		font-size: 1.3rem;
+		margin-left: 5px;
+	}
+}
+
+/* ---- Keep Cards Bottom Flushed ---- */
+
+
+@media (min-width: 871px) {
+	.gallery-img {
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 919px) {
+	.small-p {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+}
+
+@media (min-width: 958px) {
+	.small-p {
+		padding-top: 1.4em;
+		padding-bottom: 1.4em;
+}
+
+
+/* ---- For extra wide screens ---- */
+
+@media (min-width: 1025px) {
+
+	.banner {
+		background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("https://c2.staticflickr.com/8/7371/16390118742_067844b22b_k.jpg") center no-repeat;
+		background-size: cover;
+		/*background: #607d8b;*/
+		height: 80vh;
+		padding-top: 160px;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.left-img {
+		margin-left: 1.5em;
+	}
+
+	.contact-cta {
+		max-width: 100%;
+	}
+}
+
+/* ---- Center Salon Info on medium screens ---- */
+
+@media (min-width: 523px) and (max-width: 767px) {
+	.grid-5 .container {
+		padding-left: 3em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
